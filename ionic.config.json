@@ -1,0 +1,7 @@
+{
+  "name": "paul-website",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
