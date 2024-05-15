@@ -1,0 +1,14 @@
+.title {
+  text-align: center;
+  span {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 0.5em 0;
+  }
+}
+
+.skill-card {
+  min-width: 13em;
+  color: var(--color-light-yellow);
+  padding: 0.5em 0;
+}

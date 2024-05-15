@@ -1,0 +1,101 @@
+<app-header [translucent]="true"></app-header>
+
+<ion-content>
+  <div style="width: 100%; padding: 5em 3em">
+    <div style="display: flex; flex-wrap: wrap">
+      <div style="min-width: 20em; margin: auto">
+        <div id="portrait"></div>
+      </div>
+      <div style="height: 100%; color: #fff; margin: auto">
+        <div style="border-bottom: 2px solid #fff">
+          <p style="font-size: 3em; margin: 0.5em 0">Software Engineer</p>
+        </div>
+        <div class="about-row">
+          <ion-icon name="person-circle"></ion-icon>
+          <p>Paul Fang (方寶銘)</p>
+        </div>
+        <div class="about-row">
+          <ion-icon name="mail"></ion-icon>
+          <p>paul87224&#64;gmail.com</p>
+        </div>
+        <div class="icon-list">
+          <a href="https://github.com/RA-Paul">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/%E5%AF%B6%E9%8A%98-%E6%96%B9-60a1332bb/"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://medium.com/@paul87224">
+            <ion-icon name="logo-medium"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="area-light">
+    <div style="width: 100%">
+      <div class="title">
+        <span>EXPERIENCE</span>
+      </div>
+    </div>
+    <div style="position: relative; width: 100%; height: 90%">
+      <ul id="timeline">
+        <li>
+          <div>
+            <p>2021.03 ~ 2024.04</p>
+            <p>軟體工程師<br />( Angular + PHP 全端 )</p>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>2020.11 ~ 2021.02</p>
+            <p>助理工程師<br />( Angular + PHP 全端 )</p>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>2018.08 ~ 2020.07</p>
+            <p>政治大學-應用數學系</p>
+            <span></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <p>2016.08 ~ 2018.07</p>
+            <p>高雄師範大學-數學系</p>
+            <span></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="width: 100%; padding: 3em 3em">
+    <div style="width: 100%">
+      <div class="title">
+        <span>SKILLS</span>
+      </div>
+    </div>
+    <div id="skill-area">
+      <app-skill-card
+        [title]="skillList[0]['title']"
+        [itemList]="skillList[0]['itemList']"
+      ></app-skill-card>
+      <div class="vertical-bar"></div>
+      <app-skill-card
+        [title]="skillList[1]['title']"
+        [itemList]="skillList[1]['itemList']"
+      ></app-skill-card>
+      <div class="vertical-bar"></div>
+      <app-skill-card
+        [title]="skillList[2]['title']"
+        [itemList]="skillList[2]['itemList']"
+      ></app-skill-card>
+    </div>
+  </div>
+</ion-content>
