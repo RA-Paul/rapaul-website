@@ -8,8 +8,23 @@
     <ion-title> RA-Paul 個人網頁 </ion-title>
 
     <ion-buttons slot="end">
-      <ion-button (click)="toArticlePage()">文章專區</ion-button>
-      <ion-button (click)="toHomePage()">自我介紹</ion-button>
+      <ion-button class="top-button1" (click)="toArticlePage()"
+        >文章專區</ion-button
+      >
+      <ion-button class="top-button1" (click)="toHomePage()"
+        >自我介紹</ion-button
+      >
+      <ion-button class="top-button2" (click)="openMenu()">
+        <ion-icon name="menu"></ion-icon>
+      </ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
+
+<ng-container *ngIf="menuShow">
+  <div id="menu">
+    <div (click)="toArticlePage()">文章專區</div>
+    <div (click)="toHomePage()">自我介紹</div>
+    <ion-icon name="close" (click)="closeMenu()"></ion-icon>
+  </div>
+</ng-container>

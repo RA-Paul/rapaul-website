@@ -11,19 +11,31 @@ export class HeaderComponent implements OnInit {
   @Input() translucent: boolean = false;
   @Input() collapse: string = '';
 
+  menuShow = false;
+
   constructor(private router: Router) {}
 
   ngOnInit() {}
 
   toArticlePage() {
+    this.closeMenu();
     if (this.router.url !== '/article') {
       this.router.navigate(['/article']);
     }
   }
 
   toHomePage() {
+    this.closeMenu();
     if (this.router.url !== '/home') {
       this.router.navigate(['/home']);
     }
+  }
+
+  openMenu() {
+    this.menuShow = true;
+  }
+
+  closeMenu() {
+    this.menuShow = false;
   }
 }
