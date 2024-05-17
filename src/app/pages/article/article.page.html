@@ -1,13 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>article</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">article</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content>
+  <div id="row">
+    <div>
+      <div class="title">
+        <span>文章列表</span>
+      </div>
+      <div>
+        <ng-container *ngFor="let article of articleList;">
+          <app-article-card [article]="article"> </app-article-card>
+        </ng-container>
+      </div>
+    </div>
+    <div>
+      <div class="title">
+        <span>關於我</span>
+      </div>
+      <div id="portrait">
+        <img src="assets/imgs/portrait.jpg" alt="RA-Paul 個人網頁" />
+      </div>
+      <div id="description">
+        <div>
+          我是方寶銘，擁有 3+ 年 Angular + PHP + Mysql
+          開發經驗，持續學習新的技術與框架，同時將學習的經驗與過程紀錄於此。
+        </div>
+      </div>
+      <div class="title">
+        <span>相關網頁</span>
+      </div>
+      <div class="icon-list">
+        <a href="https://github.com/RA-Paul">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/%E5%AF%B6%E9%8A%98-%E6%96%B9-60a1332bb/"
+        >
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://medium.com/@paul87224">
+          <ion-icon name="logo-medium"></ion-icon>
+        </a>
+      </div>
+    </div>
+  </div>
 </ion-content>
+s

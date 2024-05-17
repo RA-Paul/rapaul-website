@@ -4,10 +4,21 @@ import { HeaderComponent } from './header/header.component';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { IonicModule } from '@ionic/angular';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { ArticleCardComponent } from './article-card/article-card.component';
 
 @NgModule({
-  declarations: [HeaderComponent, SideBarComponent, SkillCardComponent],
+  declarations: [
+    HeaderComponent,
+    SideBarComponent,
+    SkillCardComponent,
+    ArticleCardComponent,
+  ],
   imports: [CommonModule, IonicModule],
-  exports: [HeaderComponent, SideBarComponent, SkillCardComponent],
+  exports: [
+    HeaderComponent,
+    SideBarComponent,
+    SkillCardComponent,
+    ArticleCardComponent,
+  ],
 })
 export class ComponentsModule {}

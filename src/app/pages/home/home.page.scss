@@ -62,7 +62,7 @@ ion-content {
   ion-icon {
     cursor: pointer;
     &:hover {
-      color: var(--color-light-yellow);
+      color: var(--color-blue-green);
       transform: scale(1.2);
     }
   }
@@ -108,7 +108,7 @@ ion-content {
     background-color: var(--color-dark-blue);
     padding: 0.4em;
     border-radius: 10px;
-    box-shadow: 5px 5px 0px 0 var(--color-gray);
+    box-shadow: 5px 5px 0px 0 var(--color-blue-green);
     color: var(--color-light-yellow);
     p {
       font-size: 1.5em;
