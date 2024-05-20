@@ -31,6 +31,13 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  toExperiencePage() {
+    this.closeMenu();
+    if (this.router.url !== '/experience') {
+      this.router.navigate(['/experience']);
+    }
+  }
+
   openMenu() {
     this.menuShow = true;
   }

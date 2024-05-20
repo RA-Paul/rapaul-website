@@ -13,14 +13,16 @@ const routes: Routes = [
       import('./pages/home/home.module').then((m) => m.HomePageModule),
   },
   {
-    path: 'about',
-    loadChildren: () =>
-      import('./pages/about/about.module').then((m) => m.AboutPageModule),
-  },
-  {
     path: 'article',
     loadChildren: () =>
       import('./pages/article/article.module').then((m) => m.ArticlePageModule),
+  },
+  {
+    path: 'experience',
+    loadChildren: () =>
+      import('./pages/experience/experience.module').then(
+        (m) => m.ExperiencePageModule
+      ),
   },
 ];
 

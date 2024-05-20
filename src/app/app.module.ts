@@ -11,6 +11,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { ArticleService } from './services/article.service';
 
+import { ExperienceService } from './services/experience.service';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -22,6 +24,7 @@ import { ArticleService } from './services/article.service';
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     ArticleService,
+    ExperienceService,
   ],
   bootstrap: [AppComponent],
 })

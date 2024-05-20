@@ -4,11 +4,11 @@
   <div id="row">
     <div>
       <div class="title">
-        <span>文章專區</span>
+        <span>專案介紹</span>
       </div>
       <div>
-        <ng-container *ngFor="let article of articleList;">
-          <app-article-card [article]="article"> </app-article-card>
+        <ng-container *ngFor="let experience of experience_list">
+          <app-experience-card [experience]="experience"></app-experience-card>
         </ng-container>
       </div>
     </div>

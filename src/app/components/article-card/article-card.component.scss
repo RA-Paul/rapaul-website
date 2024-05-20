@@ -6,6 +6,9 @@
   padding: 1em;
   padding-bottom: 2em;
   cursor: pointer;
+  &:hover {
+    background-color: var(--color-light-yellow);
+  }
 }
 
 .title {
