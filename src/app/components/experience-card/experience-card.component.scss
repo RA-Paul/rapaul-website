@@ -5,17 +5,17 @@
   box-shadow: 5px 5px 0px 0 #01a48f;
   padding: 1em;
   padding-bottom: 2em;
-  cursor: pointer;
+  // cursor: pointer;
   // display: grid;
   // grid-template-columns: 40% 60%;
   // @media screen and (max-width: 768px) {
   //   display: block;
   // }
 
-  cursor: pointer;
-  &:hover {
-    background-color: var(--color-light-yellow);
-  }
+  // cursor: pointer;
+  // &:hover {
+  //   background-color: var(--color-light-yellow);
+  // }
 }
 
 #image {
@@ -47,4 +47,15 @@
 #content {
   padding: 5px;
   color: #000;
+}
+
+.link {
+  margin-top: 0.2em;
+  cursor: pointer;
+  text-align: right;
+  a {
+    display: flex;
+    align-items: center;
+    float: right;
+  }
 }

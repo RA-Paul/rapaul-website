@@ -1,4 +1,4 @@
-<div id="card" (click)="open()">
+<div id="card">
   <div id="image">
     <img [src]="experience.image" alt="experience image" />
   </div>
@@ -7,6 +7,14 @@
       <div class="title">{{ experience.title }}</div>
       <div class="description">{{ experience.description }}</div>
       <div class="date">{{ experience.date }}</div>
+      <ng-container *ngIf="experience.link">
+        <div class="link" (click)="open()">
+          <a>
+            前往專案
+            <ion-icon name="arrow-forward"></ion-icon>
+          </a>
+        </div>
+      </ng-container>
     </article>
   </div>
 </div>
