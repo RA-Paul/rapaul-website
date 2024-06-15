@@ -9,6 +9,42 @@ import { Article } from '../classes/article';
 export class ArticleService {
   articleList: Article[] = [
     {
+      title: '【資安】CSRF (Cross Site Request Forgery / 跨站請求偽造)',
+      description:
+        '當使用者登入網頁後，其身份資訊會被儲存，此時有心人士可以誘導使用者去觸發或是主動執行對於已驗證網頁的操作，如果網頁沒有進行其他驗證，則會無條件信任是由使用者發送的請求，導致該操作將會被成立',
+      link: 'https://medium.com/@paul87224/%E8%B3%87%E5%AE%89-csrf-cross-site-request-forgery-%E8%B7%A8%E7%AB%99%E8%AB%8B%E6%B1%82%E5%81%BD%E9%80%A0-93e1b760a405',
+      image:
+        'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1zPdRKYrLAqhjpxdk1_e0w.png',
+      pubDate: '2024-06-13',
+    },
+    {
+      title: '【Git】不能被看見 .gitignore',
+      description:
+        '當多人合作時，我們就會需要合作軟體的版本控制協助，Git就是其中一種選擇，再每次的修改中可能會有需要暫時參考的檔案、金鑰檔案、依賴套件等多樣資訊存於本機專案中，但因為必要性、機密性、空間容量等考量而不用 push 至雲端中，此時我們就可以使用 .gitignore 文件來告訴 Git 那些文件是我們在上傳時要忽略的!',
+      link: 'https://medium.com/@paul87224/git-%E4%B8%8D%E8%83%BD%E8%A2%AB%E7%9C%8B%E8%A6%8B-gitignore-3ce82c511948',
+      image:
+        'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*4qw97c4Onm34RexFAUUkZQ.png',
+      pubDate: '2024-06-11',
+    },
+    {
+      title: '【資安】XSS (Cross-Site Scripting / 跨站腳本攻擊)',
+      description:
+        '跟SQL Injection有點相似，是有心人士透過輸入欄位或是驗證參數方式，將惡意 HTML、JavaScript 等程式碼注入網頁當中，達到獲取其他使用者資訊 ( cookie、token… )，或是將執行惡意程式導致他人的傷害。',
+      link: 'https://medium.com/@paul87224/%E8%B3%87%E5%AE%89-xss-cross-site-scripting-%E8%B7%A8%E7%AB%99%E8%85%B3%E6%9C%AC%E6%94%BB%E6%93%8A-fdda33f8ade5',
+      image:
+        'https://miro.medium.com/v2/resize:fit:1400/format:webp/1*EY0lC0wam-YDIROU2F6zKQ.png',
+      pubDate: '2024-06-07',
+    },
+    {
+      title: '【資安】SQL Injection (SQL 注入)',
+      description:
+        'SQL Injection 主要是發生於開發人員對於使用者輸入的資訊處理不當，導致SQL 語句中混入人為惡意的語句，從而讓駭客獲得或修改資料庫數據。',
+      link: 'https://medium.com/@paul87224/%E8%B3%87%E5%AE%89-sql-injection-sql-%E6%B3%A8%E5%85%A5-5a70c19a5ab2',
+      image:
+        'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*pE6NC6NxbYfGX_IRjElLjA.png',
+      pubDate: '2024-05-26',
+    },
+    {
       title: '【GitHub】Ionic+Angular 部屬 GitHub Pages',
       description:
         'GitHub Pages 是一個可以讓我們展示靜態網站的功能，讓大家可以不用去建立一台虛擬機器，就可以讓其他人看到自己的網頁成品。',
